@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <i class="fa-solid fa-bars hide" id="menu"></i>
+        <i class="fa-solid fa-close" id="xMark"></i>
+        <div class="dot purple-theme"></div>
+        <div class="dot blue-theme"></div>
+        <div class="dot green-theme"></div>
+        <div class="dot yellow-theme"></div>
+        <div class="dot orange-theme"></div>
+        <div class="dot red-theme"></div>
+        <div id="line" class="line"></div>
+        <div id="light" class="light">☀️</div>
+        <div id="dark" class="dark hide inactive">🌜</div>
+    </div>
+
+    <div class="box">
+        <h3 class="chart-title">Age</h3>
+
+        <div class="columns">
+
+            <div class="column">
+                <p class="percentage">27.5%</p>
+                <div class="bar">
+                    <div class="bar-fill"></div>
+                </div>
+                <p class="age-group">18-24</p>
+            </div>
+
+            <div class="column">
+                <p class="percentage">39%</p>
+                <div class="bar">
+                    <div class="bar-fill"></div>
+                </div>
+                <p class="age-group">25-34</p>
+            </div>
+
+            <div class="column">
+                <p class="percentage">15.5%</p>
+                <div class="bar">
+                    <div class="bar-fill"></div>
+                </div>
+                <p class="age-group">35-44</p>
+            </div>
+
+            <div class="column">
+                <p class="percentage">12.5%</p>
+                <div class="bar">
+                    <div class="bar-fill"></div>
+                </div>
+                <p class="age-group">45-54</p>
+            </div>
+
+            <div class="column">
+                <p class="percentage">5.5%</p>
+                <div class="bar">
+                    <div class="bar-fill"></div>
+                </div>
+                <p class="age-group">55+</p>
+            </div>
+
+        </div>
+
+        <p id="age-total-sessions">0% of total sessions</p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

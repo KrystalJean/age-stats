@@ -1,0 +1,196 @@
+:root {
+    --background-color: #3F3334;
+    --primary-color: #493D3E;
+    --font-primary: #fff;
+    --font-secondary: rgb(160, 159, 159);
+    --theme-color: #D5634E;
+    --theme-highlight: #d33f24;
+}
+
+.dark-theme {
+    --background-color: #3F3334;
+    --primary-color: #493D3E;
+    --font-primary: #fff;
+    --font-secondary: rgb(160, 159, 159);
+}
+
+.light-theme {
+    --background-color: #f3f1f1;
+    --primary-color: #ffffff;
+    --font-primary: rgb(0, 0, 0);
+    --font-secondary: rgb(54, 54, 54);
+}
+
+.red-theme {
+    --theme-color: #D5634E;
+    --theme-highlight: #d33f24;
+}
+
+.orange-theme {
+    --theme-color: #d5844e;
+    --theme-highlight: #d36424;
+}
+
+.yellow-theme {
+    --theme-color: #d5bc4e;
+    --theme-highlight: #d3ab29;
+}
+
+.green-theme {
+    --theme-color: #4ed57b;
+    --theme-highlight: #21c249;
+}
+
+.blue-theme {
+    --theme-color: #4e5bd5;
+    --theme-highlight: #1c5dbe;
+}
+
+.purple-theme {
+    --theme-color: #984ed5;
+    --theme-highlight: #7d1cbe;
+}
+
+body {
+    height: 100vh;
+    padding: 0 25%;
+
+    background-color: var(--background-color);
+    color: var(--font-secondary);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-end;
+    
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: .6px;
+}
+
+.box {
+    background-color: var(--primary-color);
+    box-shadow: #000 0px 2px 12px;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    margin: 20px 0;
+    
+    height: 280px;
+    aspect-ratio: 1.25 / 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box p {
+    text-align: center;
+    font-size: .6em;
+    letter-spacing: normal;
+}
+
+.chart-title {
+    color: var(--font-primary);
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -5px;
+}
+
+.column {
+    margin: 0 5px;
+}
+
+.column:hover {
+    color: var(--font-primary);
+}
+
+.column:hover .bar {
+    outline: rgb(24, 24, 24) 1px solid;
+}
+
+.column:hover  .bar-fill {
+    background-color: var(--theme-highlight);
+}
+
+
+.bar {
+    position: relative;
+
+    border-radius: 3px;
+    background-color: var(--background-color);
+
+    height: 100px;
+    width: 35px;
+}
+
+.bar-fill {
+    position: absolute;
+    bottom: 0;
+    
+    height: 1%;
+    width: 100%;
+
+    background-color: var(--theme-color);
+    border-radius: 0 0 3px 3px;
+}
+
+.dot, i, .line, .light, .dark {
+    margin: 5px;
+}
+
+i {
+    font-size: 18px;
+}
+
+.dot {
+    height: 14px;
+    width: 14px;  
+    border-radius: 50px;
+}
+
+.dot {
+    background-color: var(--theme-color);
+}
+
+.dot:hover {
+    background-color: var(--theme-highlight);
+    cursor: pointer;
+}
+
+.line {
+    height: 20px;
+    width: 1px;
+    background-color: var(--font-secondary);
+}
+
+.light:hover, .dark:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.inactive {
+    display: none;
+}
+
+.menu {
+    height: auto;
+    width: auto;
+    padding: 5px;
+
+    background-color: var(--primary-color);
+    box-shadow: #000 0px 2px 12px;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
